@@ -11,9 +11,6 @@ Designed to address emotional isolation in vulnerable demographics (such as inte
 * **Dynamic Avatars:** Synthesizes real-time companion visuals that reflect the user's emotional state via the `FLUX.1-schnell` text-to-image diffusion model.
 
 ## 🏗️ System Architecture
-![System Architecture Diagram](<img width="682" height="681" alt="DesignMethodolgy drawio" src="https://github.com/user-attachments/assets/6134a6c1-3290-4d31-a406-277a39302291" />
-) *(Note: Update this path once you upload your flowchart!)*
-
 The application utilizes a branching, multi-agent pipeline designed for maximum resilience:
 1. **Perception Layer:** The `SamLowe/roberta-base-go_emotions` NLP pipeline analyzes user input to provide an accurate affective label.
 2. **Cognitive Layer:** The `Zephyr-7b-beta` LLM ingests the input and emotion label, functioning as a "Director" to generate a JSON containing parallel conversational and visual prompts.
